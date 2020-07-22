@@ -54,9 +54,9 @@ const Navbar = (): JSX.Element => {
 
     return <div className='p-3 flex-column'>
 
-		<Button type="primary" className='pb-4' onClick={clearFilter}>Очистить фильтр</Button>
+		<Button type="primary" className='mb-4' onClick={clearFilter}>Очистить фильтр</Button>
 
-		<div className='w-100 flex-column pb-4'>
+		<div className='w-100 flex-column mb-4'>
             <p>Страна:</p>
             <Select
                 showSearch
@@ -70,7 +70,7 @@ const Navbar = (): JSX.Element => {
             </Select>
 		</div>
 
-        <div className='w-100 flex-column pb-4'>
+        <div className='w-100 flex-column mb-4'>
             <p>Тип:</p>
             <Select
                 mode="multiple"
@@ -83,7 +83,7 @@ const Navbar = (): JSX.Element => {
             </Select>
         </div>
 
-        <div className='w-100 flex-column pb-4'>
+        <div className='w-100 flex-column mb-4'>
             <p>Звезды:</p>
             <CheckboxGroup
                 value={filters.rating.map((item) => item.toString())}
@@ -101,7 +101,7 @@ const Navbar = (): JSX.Element => {
             </CheckboxGroup>
         </div>
 
-        <div className='flex-column pb-4'>
+        <div className='flex-column mb-4'>
             <p>Количество отзывов от:</p>
             <InputNumber
                 min={0}
@@ -112,7 +112,7 @@ const Navbar = (): JSX.Element => {
                 className='w-100'/>
         </div>
 
-        <div className='w-100 flex-column pb-4'>
+        <div className='w-100 flex-column mb-4'>
             Цена до:
             <div className='w-100 row'>
                 <div className='col-2'>
